@@ -61,7 +61,6 @@
 		721A87511AE4B75B003DBFC4 = {
 			isa = PBXGroup;
 			children = (
-				AAE90ECC222ECD8B008974AB /* StopWatch.swift */,
 				721A875C1AE4B75B003DBFC4 /* Stopwatch */,
 				721A87721AE4B75C003DBFC4 /* StopwatchTests */,
 				721A875B1AE4B75B003DBFC4 /* Products */,
@@ -80,6 +79,7 @@
 		721A875C1AE4B75B003DBFC4 /* Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
+				AAE90ECC222ECD8B008974AB /* StopWatch.swift */,
 				721A875F1AE4B75B003DBFC4 /* AppDelegate.swift */,
 				721A87611AE4B75B003DBFC4 /* ViewController.swift */,
 				721A87631AE4B75C003DBFC4 /* Main.storyboard */,
