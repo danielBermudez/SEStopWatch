@@ -27,14 +27,18 @@ class ViewController: UIViewController {
     @IBAction func startbuttonTapped(_ sender: UIButton) {
         print("Starting Stopwatch")
         
-        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateElapsedTimeLabel), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateElapsedTimeLabel), userInfo: nil, repeats: true)
         stopwatch.start()
       
     }
     @objc func updateElapsedTimeLabel(timer: Timer){
         print("updating..")
         if stopwatch.isRunning{
-        elapsedTimeLabel.text="\(stopwatch.elapsedTime)"
+            let minutes = Int(stopwatch.elapsedTime / 60)
+            let seconds = Int (stopwatch.elapsedTime.truncatingRemainder(dividingBy: 60) )
+            let thenthsOfSecond = Int(stopwatch.elapsedTime * 10.truncatingRemainder(dividingBy: 10))
+            
+            elapsedTimeLabel.text=String(format: "%02d:%02d.%d ", minutes,seconds,thenthsOfSecond)
         }else {
             timer.invalidate()
         }

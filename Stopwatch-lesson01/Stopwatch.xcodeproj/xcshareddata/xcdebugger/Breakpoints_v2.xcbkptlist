@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
             filePath = "Stopwatch/ViewController.swift"
-            timestampString = "573514576.9366879"
+            timestampString = "573517403.717908"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "30"
@@ -35,11 +35,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "Yes"
             filePath = "Stopwatch/ViewController.swift"
-            timestampString = "573514576.937009"
+            timestampString = "573517403.718383"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "ViewController"
             landmarkType = "3">
             <Actions>
