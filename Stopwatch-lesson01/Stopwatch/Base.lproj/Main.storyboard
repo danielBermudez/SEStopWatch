@@ -53,6 +53,9 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Djm-8d-9ZI" secondAttribute="bottom" constant="77" id="xyJ-39-ugW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="elapsedTimeLabel" destination="ZQ8-cS-wuJ" id="Rrq-vf-BVx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

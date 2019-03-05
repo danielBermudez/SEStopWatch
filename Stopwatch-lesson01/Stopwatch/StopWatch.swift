@@ -9,6 +9,10 @@
 import Foundation
 class Stopwatch{
     private var startTime : NSDate?
+    
+    var isRunning: Bool{
+        return startTime != nil
+    }
     var elapsedTime : TimeInterval{
         if let startTime = self.startTime{
             return -startTime.timeIntervalSinceNow
