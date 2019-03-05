@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     @IBAction func startbuttonTapped(_ sender: UIButton) {
         print("Starting Stopwatch")
         stopwatch.start()
-        while stopwatch.isRunning{
+        while stopwatch.getIsRunning(){
             print("Updating")
             elapsedTimeLabel.text="\(stopwatch.elapsedTime)"
         }
