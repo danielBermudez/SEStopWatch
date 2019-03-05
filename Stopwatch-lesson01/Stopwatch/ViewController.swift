@@ -26,10 +26,17 @@ class ViewController: UIViewController {
     
     @IBAction func startbuttonTapped(_ sender: UIButton) {
         print("Starting Stopwatch")
+        
+        Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateElapsedTimeLabel), userInfo: nil, repeats: true)
         stopwatch.start()
-        while stopwatch.isRunning{
-            print("Updating")
-            elapsedTimeLabel.text="\(stopwatch.elapsedTime)"
+      
+    }
+    @objc func updateElapsedTimeLabel(timer: Timer){
+        print("updating..")
+        if stopwatch.isRunning{
+        elapsedTimeLabel.text="\(stopwatch.elapsedTime)"
+        }else {
+            timer.invalidate()
         }
     }
     
