@@ -8,6 +8,8 @@ This work is licensed under a Creative Commons Attribution-NonCommercial-ShareAl
 import UIKit
 
 class ViewController: UIViewController {
+    let stopwatch = Stopwatch()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,16 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func startbuttonTapped(_ sender: UIButton) {
+        print("Starting Stopwatch")
+        stopwatch.start()
+    }
+    
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
+        print(stopwatch.elapsedTime)
+        stopwatch.stop()
+        
+    }
 }
 
 
