@@ -23,12 +23,12 @@ class ViewController: UIViewController {
     
     
     @IBAction func startbuttonTapped(_ sender: UIButton) {
-        print("Starting Stopwatch")
+        
         stopwatch.start()
     }
     
     @IBAction func stopButtonTapped(_ sender: UIButton) {
-        print(stopwatch.elapsedTime)
+        
         stopwatch.stop()
         
     }
