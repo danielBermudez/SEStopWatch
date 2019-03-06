@@ -34,11 +34,9 @@ class ViewController: UIViewController {
     @objc func updateElapsedTimeLabel(timer: Timer){
         print("updating..")
         if stopwatch.isRunning{
-            let minutes = Int(stopwatch.elapsedTime / 60)
-            let seconds = Int (stopwatch.elapsedTime.truncatingRemainder(dividingBy: 60) )
-            let thenthsOfSecond = Int(stopwatch.elapsedTime * 10.truncatingRemainder(dividingBy: 10))
             
-            elapsedTimeLabel.text=String(format: "%02d:%02d.%d ", minutes,seconds,thenthsOfSecond)
+            
+            elapsedTimeLabel.text = stopwatch.description
         }else {
             timer.invalidate()
         }
